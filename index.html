@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>NAACP Boston Service Day - Virtual Style</title>
+        <title>NAACP Boston City Service Day - Virtual Style</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -27,9 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Program Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#FAQ">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
@@ -39,27 +39,30 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To NAACP Boston's Inaugural Virtual Day of Service!</div>
-                <div class="masthead-heading text-uppercase">Building Community By Giving Time & Talent</div>
-                <p><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://office.gatherly.io/" target="_blank">Join Our Viritual Conference</a></p>
-                <p><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a></p>
+                <div class="masthead-subheading">Welcome To NAACP Boston's Inaugural Virtual City Service Day!</div>
+                <div class="masthead-heading text-uppercase">In Solidarity<br>
+                    Through Service</div>
+                <div class="masthead-subheading-sm text-uppercase">Saturday, August 1</div>
+
+                <p><a class="btn header-btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://office.gatherly.io/" target="_blank">Join Our Virtual Conference</a></p>
+                <p><a class="btn header-btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a></p>
             </div>               
     </header>
 
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted"> The purpose of this day is to provide individuals, non-profits, corporations, clergy, neighborhoods and all who are committed to challenging racism and the structures that support it an opportunity to participate in an act of solidarity through service.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
+                        <h4 class="my-3">Enrich</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
@@ -67,29 +70,55 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Responsive Design</h4>
+                        <h4 class="my-3">Engage</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-chevron-circle-up fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
+                        <h4 class="my-3">Elevate</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="schedule">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Program Schedule</h2>
+                    <h3 class="section-subheading text-muted">Check out what we have going on throughout the day!</h3>
+                </div>
+                <!-- Filter buttons -->
+                <div id="myBtnContainer">
+                    <center>
+                        <button class="btn active" onclick="filterSelection('all')"> Reset and Show all</button>
+                    </center>
+                    <br>Filter by when events are happening:<br>
+                    <button class="btn" onclick="filterSelection('startsAt09')"> 9:00am</button>
+                    <button class="btn" onclick="filterSelection('startsAt10')"> 10:00am</button>
+                    <button class="btn" onclick="filterSelection('startsAt11')"> 11:00am</button>
+                    <button class="btn" onclick="filterSelection('startsAt12')"> 12:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt01')"> 1:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt02')"> 2:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt03')"> 3:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt04')"> 4:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt05')"> 5:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt06')"> 6:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt07')"> 7:00pm</button>
+                    <button class="btn" onclick="filterSelection('startsAt08')"> 8:00pm</button>
+                    <br>Filter by audience:<br>
+                    <button class="btn" onclick="filterSelection('children')"> Children</button>
+                    <button class="btn" onclick="filterSelection('teens')"> Teens</button>
+                    <button class="btn" onclick="filterSelection('adults')"> Adults</button>
+                    <br>
+                    <p></p>
+
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4 container filterDiv startsAt10 teens adults">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
@@ -98,12 +127,12 @@
                                 <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                                <div class="portfolio-caption-heading">10-11am</div>
+                                <div class="portfolio-caption-subheading text-muted">Count me in!</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4 container filterDiv startsAt10 startsAt11">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
@@ -112,12 +141,12 @@
                                 <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
+                                <div class="portfolio-caption-heading">10am-12pm</div>
                                 <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4 container filterDiv startsAt11 startsAt12">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
@@ -126,12 +155,12 @@
                                 <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
+                                <div class="portfolio-caption-heading">11am-1pm</div>
                                 <div class="portfolio-caption-subheading text-muted">Identity</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0 container filterDiv startsAt12">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
@@ -140,12 +169,12 @@
                                 <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
+                                <div class="portfolio-caption-heading">12-1pm</div>
                                 <div class="portfolio-caption-subheading text-muted">Branding</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0 container filterDiv startsAt01 children">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
@@ -154,12 +183,12 @@
                                 <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                                <div class="portfolio-caption-heading">1-2pm</div>
+                                <div class="portfolio-caption-subheading text-muted">StoryTime with BPS</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 container filterDiv startsAt10 startsAt11 startsAt12">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
@@ -168,7 +197,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-heading">10am-1pm</div>
                                 <div class="portfolio-caption-subheading text-muted">Photography</div>
                             </div>
                         </div>
@@ -176,66 +205,113 @@
                 </div>
             </div>
         </section>
-        <!-- About-->
-        <section class="page-section" id="about">
+        <!-- Frequently Asked Questions -->
+        <section class="page-section" id="FAQ">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Frequently Asked Questions</h2>
+                    <h3 class="section-subheading text-muted">Have questions? We've got answers.</h3>
                 </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#tab1" aria-selected="true" class="active">About Service Day</a></li>
+                                <li><a data-toggle="tab" href="#tab2" aria-selected="false">About Gatherly</a></li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            
+                            <div class="tab-content">
+                                <div id="tab1" class="tab-pane fade show active">
+                                    <div class="accordion">
+                                        <div class="card">
+                                            <div class="card-header" id="serviceday01">
+                                                <a href="#collapseOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    <p class="mb-0">
+                                                        Is it free to participate? 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="collapse" aria-labelledby="infraOne" data-parent="#accordion">
+                                                <div class="card-body">
+                                                Yes, of course! There is no cost to join us virtually.
+                                                </div>
+                                            </div>
+                                        </div><!-- close card-->
+                                        <div class="card">
+                                            <div class="card-header" id="serviceday02">
+                                                <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  <p class="mb-0">Do I need to sign up for a platform?
+                                                </p>
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="infraTwo" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Nope. All you need is to have an Internet connection and give permission to use your camera so that you can have conversations and interact with other attendees. 
+                                                </div>
+                                            </div>
+                                        </div><!-- card-->
+                                        <div class="card">
+                                            <div class="card-header" id="serviceday03">
+                                                <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <p class="mb-0">What browsers does Solodev CMS support?</p>
+                                                </a>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="infraThree" data-parent="#accordion">
+                                                <div class="card-body">
+                                                We support the current and previous major releases of Google Chrome™, Firefox®, Safari®, Microsoft® Edge™, and Internet Explorer® on a rolling basis. Each time a new version is released, we begin supporting that version and stop supporting the third most recent version.
+                                                </div>
+                                            </div>
+                                        </div><!-- card-->
+                                    </div><!-- accordion-->
+                                </div><!-- tab 1-->
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="gatherly01">
+                                            <a href="#collapseFour"   data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                                <p class="mb-0">What are the benefits of Solodev CMS?</p>
+                                            </a>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="aboutOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                            With Solodev CMS, you and your visitors will benefit from a finely-tuned technology stack that drives the highest levels of site performance, speed and engagement - and contributes more to your bottom line. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="gatherly02">
+                                            <a href="#collapseFive" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                              <p class="mb-0">How easy is it to build a website with Solodev CMS?</p>
+                                            </a>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="aboutTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                            Building a website is extremely easy. With a working knowledge of HTML and CSS you will be able to have a site up and running in no time.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="gatherly03">
+                                            <a href="#collapseSix" class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                              <p class="mb-0">Can I get a personalized demonstration of Solodev CMS?</p>
+                                            </a>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="aboutThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                            Yes, click here to request a demo and one of our representatives will contact you shortly to setup a time convenient to you.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- accordion-->
+                            </div><!-- tab2 -->
+                          </div><!-- tab content-->
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div> <!-- -->
             </div>
         </section>
         <!-- Team-->
@@ -248,22 +324,22 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="Tanisha M. Sullivan, Esq." />
                             <h4>Tanisha M. Sullivan, Esq.</h4>
                             <p class="text-muted">President</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
-                            <h4><a href="https://www.linkedin.com/in/ayannapolk">Ayanna Polk</a></h4>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="Ayanna Polk" />
+                            <h4><a href="https://www.linkedin.com/in/ayannapolk" target="_blank">Ayanna Polk</a></h4>
                             <p class="text-muted">Virtual Service Day Co-Director</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
-                            <h4><a href="https://www.linkedin.com/in/anitayip">Anita Yip</a></h4>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="Anita Yip" />
+                            <h4><a href="https://www.linkedin.com/in/anitayip" target="_blank">Anita Yip</a></h4>
                             <p class="text-muted">Virtual Service Day Co-Director</p>
                         </div>
                     </div>
@@ -274,28 +350,34 @@
                             <p class="text-muted">Service Day Director</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
-                            <h4>Shana</h4>
-                            <p class="text-muted">Lead Volunter Manager</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="Monica L. Dean, M.Ed." />
+                            <h4><a href="https://www.linkedin.com/in/monica-l-dean-m-ed-69340411/" target="_blank">Monica L. Dean, M.Ed.</a></h4>
+                            <p class="text-muted">Census 2020 & Voter Registration Coordinator</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/gen.jpg" alt="Brandon Tilghman" />
                             <h4>Brandon Tilghman</h4>
                             <p class="text-muted">Secretary</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/gen.jpg" alt="Faarooq Sahabdeen" />
                             <h4>Faarooq Sahabdeen</h4>
                             <p class="text-muted">NAACP Fellow</p>
                         </div>
                     </div>
-                    
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/gen.jpg" alt="Faarooq Sahabdeen" />
+                            <h4>Faarooq Sahabdeen</h4>
+                            <p class="text-muted">NAACP Fellow</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">“If you want to go fast, go alone. If you want to go far, go together.”
@@ -317,7 +399,7 @@
                 </div>
             </div>
         </div>
-        --?
+    -->
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -564,5 +646,6 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/filterScripts.js"></script>
     </body>
 </html>
