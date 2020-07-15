@@ -10604,45 +10604,65 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: white;
 }
 
-ul.nav.nav-tabs > li{
+
+#FAQ ul.nav.nav-tabs > li{
 	display: inline-block;
 	line-height: 50px;
 	height: 100%;
 	text-transform:uppercase;
 }
-ul.nav.nav-tabs > li a{
+#FAQ ul.nav.nav-tabs > li a{
 	display:block;
 	padding:15px;
 	color: #282425!important;
 	
 }
-ul.nav.nav-tabs > li a:hover, ul.nav.nav-tabs > li:hover{
+#FAQ ul.nav.nav-tabs > li a:hover, ul.nav.nav-tabs > li:hover{
 	background:	rgba(36, 70, 105, 0.74);
 	color:#fff!important;
 	text-decoration: none!important;
 }
-ul.nav.nav-tabs > li a.active{
+#FAQ ul.nav.nav-tabs > li a.active{
 	background:	#282425;
 	color:#fff!important;
 	text-decoration: none!important;
 }
-.card-header {
-    background-color: rgb(245,245,245,0.3)!important;
-	  border-radius:0!important;
-}
-.card-header a {
-  color:rgba(36, 70, 105, 0.74);
-}
-.card{
-  border-radius:0!important;
+
+
+#FAQ .collapsible {
+  color: rgba(36, 70, 105, 0.74);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
-.card > .card-header a::before {
-  font-family: fontawesome;
-  content: "\f067 ";
-  color: #282425;
+#FAQ .active, .collapsible:hover {
+  background-color: #555;
+  color: #fed136;
+
+}
+
+#FAQ .collapsible:after {
+  content: '\002B';
+  color: #fed136;
+  font-weight: bold;
   float: right;
-  margin-right: 15px;
-  font-weight: 400;
-  position: absolute;
-  right: 0;
+  margin-left: 5px;
+}
+
+#FAQ .active:after {
+  color: #fed136;
+}
+
+#FAQ .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  color: #000;
+}
