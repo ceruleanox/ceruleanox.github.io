@@ -10630,7 +10630,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 #FAQ .collapsible {
-  color: rgba(36, 70, 105, 0.74);
+  /*color: rgba(36, 70, 105, 0.74);
+  */
+  background-color: #555;
+  color: #fed136;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -10641,7 +10644,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 #FAQ .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #000;
   color: #fed136;
 
 }
